@@ -31,8 +31,14 @@ function writeMessage(msg) {
 function checkNumber(msg) {
   const num = +msg;
 
-  // Check if valid number
+  // check if valid number
   if (Number.isNaN(num)) {
     msgEl.innerHTML += '<div>That is not a valid number</div>';
+    return;
+  }
+
+  // Check in range
+  if (num > 100 || num < 1) {
+    msgEl.innerHTML += '<div>Number must be between 1 and 100</div>';
     return;
   }
