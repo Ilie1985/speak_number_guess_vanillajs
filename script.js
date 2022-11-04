@@ -56,3 +56,9 @@ function checkNumber(msg) {
       msgEl.innerHTML += '<div>GO HIGHER</div>';
     }
   }
+
+
+  // Generate random number
+function getRandomNumber() {
+  return Math.floor(Math.random() * 100) + 1;
+}
