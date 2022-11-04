@@ -8,3 +8,5 @@ window.SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
 let recognition = new window.SpeechRecognition();
+// Start recognition and game
+recognition.start();
